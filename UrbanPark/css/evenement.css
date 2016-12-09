@@ -1,0 +1,423 @@
+/* ==RESET== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/*General*/
+
+/* TEXTE */
+
+h3{
+  color: #FF8A00;
+  font-size: 15px;
+}
+
+h6{
+  color: #fff;
+}
+
+p{
+  color: #000;
+  font-size: 14px;
+}
+
+body{
+  background: url('../images/fontevent.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.accueil:hover{
+  color: #03758D;
+}
+
+.accrobranche:hover{
+  color: #025515;
+}
+
+.skatpark:hover{
+  color: #33AC91;
+}
+
+.bistrot:hover{
+  color: #FF792F;
+}
+
+.evenementM:hover{
+  color: #E93F34;
+}
+
+.anniversaire:hover{
+  color: #CE3877;
+}
+
+/* ==RESPONSIVE== (360x640) */
+@media all and (min-width: 360px) and (max-width: 800px) {
+
+  /*Header*/
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background: url('../images/event.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1{
+    color: #E93F34;
+    font-family: sans-serif;
+    text-shadow: 1px 2px #000;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  /*End Header*/
+
+  /* MENU BURGER */
+  .btn-navigation{
+  	position: absolute;
+  	right: 10px;
+  	top: 10px;
+  	z-index: 999;
+  	cursor: pointer;
+  }
+
+  .btn-navigation .barre{
+  	width: 25px;
+  	height: 4px;
+  	background: #E93F34;
+  	margin-top: 3px;
+  	transition: background .3s ease-in-out;
+  	-webkit-transition: background .3s ease-in-out;
+  }
+
+  .btn-navigation .barre.white{
+  	background: #E93F34;
+  }
+
+  nav.isOpen{
+  	transform: translateX(0%);
+  	-webkit-transform: translateX(0%);
+  }
+
+  nav{
+  	position: fixed;
+  	right: 0;
+    top: 0;
+  	padding: 5px;
+  	background: #333;
+  	width: 40%;
+  	height: 100%;
+  	transition: transform .6s ease-in-out;
+  	-webkit-transition: transform .6s ease-in-out;
+  	transform: translateX(100%);
+  	-webkit-transform: translateX(100%);
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 15px;
+  	top: 140px;
+  	transform: translateY(-50%);
+  	-webkit-transform: translateY(-50%);
+  }
+
+  nav ul li{
+  	list-style: none;
+  	margin: 10px 0;
+  }
+
+  nav ul li a{
+  	text-decoration: none;
+  	color:  #fff;
+  	margin: 10px 0;
+  	font-size: 15px;
+  }
+/*FIN MENU BURGER*/
+
+/* MILIEU DE PAGE */
+
+  h3{
+    color: #E93F34;
+    text-align: center;
+    font-size: 19px;
+    text-shadow: 3px 3px 3px #C11F15;
+  }
+
+  p{
+    color: #fff;
+    font-size: 14px;
+    text-shadow: none;
+  }
+
+  section{
+    padding: 5px;
+    /*background-color: #505050;*/
+  }
+
+  aside{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 2px #E93F34;
+    border-radius: 10px;
+  }
+
+  article{
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: solid 2px #E93F34;
+    border-radius: 10px;
+  }
+
+  aside img{
+    width: 50%;
+  }
+
+  .tarif{
+    margin-top: 10px;
+  }
+
+  .art{
+    margin-top: 5px;
+  }
+ /*FIN MILIEU PAGE*/
+
+ /* FOOTER */
+  .fa{
+    margin: 15px;
+  }
+  .horplan{
+    display: none;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #353535;
+  }
+}
+
+/* ==RESPONSIVE== (min-width: 801px and max-width: 1920px) */
+
+@media all and (min-width: 801px) and (max-width: 1920px) {
+
+  .container{
+    margin:0px auto 300px auto;
+    width: 950px;
+  }
+
+  /*Header*/
+
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    background: url('../images/bgbody.jpg');
+    background-size: cover;
+  }
+
+  h1{
+    color: #F17013;
+    font-family: sans-serif;
+    text-shadow: 2px 1px #000;
+    font-size: 65px;
+    margin-top: 120px;
+    padding: 20px;
+  }
+
+  /*End Header*/
+
+  /* NAV */
+
+  nav{
+    margin-top: 130px;
+    background-color: rgba(225, 207, 187, 0.4);
+  }
+
+  a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #37251C;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+  }
+
+  li{
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px #F17013;
+  }
+
+  /*End Nav*/
+
+  /*MAIN*/
+
+  main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 800px;
+    padding: 5%;
+    border-radius: 5px;
+    background: url('../images/bgmainac.jpg');
+  }
+
+  h3{
+    color: #F17013;
+    font-size: 30px;
+    text-shadow: 2px 1px #000;
+  }
+
+  .section1{
+    width: 50%;
+    padding: 2%;
+  }
+
+  aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 600px;
+    margin-top: 50px;
+    padding: 5%;
+    border: 2px solid #F17013;
+    background-color: rgba(205, 160, 103, 0.4);
+  }
+
+  aside h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: url('../images/actu.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  aside p{
+    margin-top: 20px;
+  }
+
+  aside img{
+    width: 95%;
+    height: 40%;
+    margin-top: 10px;
+  }
+
+  .section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  article{
+    background-color: rgba(205, 160, 103, 0.4);
+  }
+
+  .evenement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 275px;
+    margin-top: 65px;
+    padding: 2%;
+    border: 2px solid #F17013;
+  }
+
+  .evenement h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .evenement p{
+    margin-top: 10px;
+  }
+
+  button{
+    width: 250px;
+    height: 65px;
+    margin-top: 10px;
+    color: #CE3877;
+    text-shadow: 2px 2px #3C8397;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 5px 5px 12px #F17013;
+    background: url('../images/btn_reservannif.jpg');
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 275px;
+    margin-top: 52px;
+    padding: 2%;
+    border: 2px solid #F17013;
+  }
+
+  .menu h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: url('../images/bistro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .menu p{
+    margin-top: 50px;
+  }
+
+  /*End Main*/
+
+  /* FOOTER */
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: #222222;
+  }
+  /*End Footer*/
+}

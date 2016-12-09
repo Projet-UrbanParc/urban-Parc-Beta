@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calendrier Alpha</title>
+        <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/calendar.css">
+    </head>
+    <body>
+        <div id="calendar"></div>
+        <div id="dialog" title="Réservation">
+            <label id="reserv" for="from">Date de réservation</label>
+            <input type="text" id="from" name="from" value="">
+            <div class="horaire" id="first">14h/16h</div>
+            <div class="horaire" id="second">16h/18h</div>
+            <input type="button" id="validate" value="Valider">
+        </div>
+        <script src="./js/jquery-3.1.1.js"></script> <!-- Jquery -->
+        <script src="./js/jquery-ui.js"></script> <!-- UI -->
+        <script src="./js/calendrier.js"></script> <!-- Mon js -->
+    </body>
+</html>
